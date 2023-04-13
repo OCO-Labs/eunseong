@@ -6,12 +6,12 @@ export default {
 
 <template>
   <head>
-    <title>인사말</title>
+    <title>인증현황</title>
   </head>
 
   <body>
     <header>
-      <div class="relative overflow-hidden">
+      <div class="relative overflow-hidden mb-20">
         <img
           src="@/assets/intro/intro3.png"
           alt="이미지"
@@ -35,14 +35,11 @@ export default {
           </div>
         </div>
       </div>
-      <!-- <img
-                                                src="@/assets/intro/intro3.png"
-                                                alt=""
-                                              > -->
-      <h2 class="mt-10 text-[35px] font-bold">
-        인증현황
-      </h2>
-      <div class="w-[1036px] h-[1px] bg-[#494949] mb-20" />
+      <div class="w-1/2 mx-auto mb-20">
+        <h1 class="text-4xl font-bold inline-block border-b-4 border-gray-300 w-full">
+          인증현황
+        </h1>
+      </div>
     </header>
     <main>
       <div class="grid grid-cols-4 gap-16 justify-items-center">
@@ -62,18 +59,69 @@ export default {
           src="@/assets/cert/patent_04.png"
           alt=""
         ><img
-          src="@/assets/cert/patent_01.png"
+          src="@/assets/cert/patent_05.png"
           alt=""
         ><img
-          src="@/assets/cert/patent_01.png"
+          src="@/assets/cert/patent_06.png"
           alt=""
         ><img
-          src="@/assets/cert/patent_01.png"
+          src="@/assets/cert/patent_07.png"
           alt=""
         ><img
-          src="@/assets/cert/patent_01.png"
+          src="@/assets/cert/patent_08.png"
           alt=""
         >
+        <img
+          src="@/assets/cert/patent_09.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_10.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_11.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_12.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_13.png"
+          alt=""
+        > <img
+          src="@/assets/cert/patent_14.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_15.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_18.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_19.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_20.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_21.png"
+          alt=""
+        >
+        <img
+          src="@/assets/cert/patent_22.png"
+          alt=""
+        >
+        <!-- <img
+          src="@/assets/cert/Group69.png"
+          alt=""
+        > 세장 따로 받기-->
       </div>
     </main>
   </body>

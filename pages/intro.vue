@@ -11,7 +11,7 @@ export default {
 
   <body>
     <header>
-      <div class="relative overflow-hidden">
+      <div class="relative overflow-hidden mb-20">
         <img
           src="@/assets/intro/intro3.png"
           alt="이미지"
@@ -35,14 +35,11 @@ export default {
           </div>
         </div>
       </div>
-      <!-- <img
-                                                src="@/assets/intro/intro3.png"
-                                                alt=""
-                                              > -->
-      <h2 class="mt-10 text-[35px] font-bold">
-        인사말
-      </h2>
-      <div class="w-[1036px] h-[1px] bg-[#494949]" />
+      <div class="w-1/2 mx-auto mb-20">
+        <h1 class="text-4xl font-bold inline-block border-b-4 border-gray-300 w-full">
+          인사말
+        </h1>
+      </div>
     </header>
     <main>
       <p class="text-xl text-center mt-10">
