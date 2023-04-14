@@ -1,8 +1,8 @@
 <script>
 export default {
-  name: 'RefrigeratorPage'
-}
-</script>
+  name: 'FarmstroePage'
+}</script>
+
 <template>
   <header>
     <div class="relative overflow-hidden mb-20">
@@ -16,7 +16,7 @@ export default {
         <div class="flex flex-col">
           <div class="mx-auto h-[1px] item-center w-[400px] bg-white border mb-12" />
           <h2 class="md:text-6xl font-bold mb-4 text-white text-center">
-            냉동,냉장 저장고
+            농축산물 저장고
           </h2>
           <div class="h-[1px] mx-auto item-center w-[400px] bg-white border mt-12 mb-12" />
           <p class="text-2xl text-white text-center">
@@ -29,79 +29,97 @@ export default {
         </div>
       </div>
     </div>
-    <div class="w-1/2 mx-auto mb-20">
-      <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
-        소형 냉동, 냉장 창고 설치 구성도
-      </h1>
-    </div>
   </header>
   <main>
     <div class="w-1/2 mx-auto mb-20">
       <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
-        냉동, 냉장창고 설치전문
+        농축산물 저장고
       </h1>
     </div>
-    <div class="grid grid-cols-3 w-1/2 mx-auto">
-      <div class="col-span-3">
-        <img
-          src="@/assets/refrigerator/box01.png"
-          alt="냉장고1"
-          class="mx-auto"
-        >
-      </div><div class="col-span-3 text-center text-xl">
-        <div class="inline font-bold text-[#1B426B]">
-          5.0평(16.5m2) :
-        </div> <div class="text-[#989898] inline">
-          5(W) x 3.3(L) x 2.4(H)
-        </div>
-      </div>
-      <div class="col-span-3">
-        <hr class="border-b-1 mx-auto mt-10 mb-20">
-      </div>
-      <div class="col-span-3">
-        <img
-          src="@/assets/refrigerator/box02.png"
-          alt="냉장고2"
-          class="mx-auto"
-        >
-      </div><div class="col-span-3 text-center text-xl">
-        <div class="inline font-bold text-[#1B426B]">
-          3.0평(9.9m2) :
-        </div> <div class="text-[#989898] inline">
-          3.7(W) x 2.7(L) x 2.4(H)
-        </div>
-      </div>
-      <div class="col-span-3">
-        <hr class="border-b-1 mx-auto mt-10">
-      </div>
-      <div class="self-center">
-        <img
-          src="@/assets/refrigerator/box03.png"
-          alt="냉장고3"
-          class="self-center"
-        ><div class="inline font-bold text-[#1B426B] text-base">
-          2.0평(6.5m2) :
-        </div> <div class="text-[#989898] inline text-base">
-          3.3(W) x 2(L) x 2.2(H)
-        </div>
-      </div>
-      <div class="border bg-[#D0D0D0] h-[417px] w-[1px] mx-auto" />
-      <div class="self-center mt-1">
-        <img
-          src="@/assets/refrigerator/box04.png"
-          alt="냉장고4"
-          class="self-center"
-        ><div class="inline font-bold text-[#1B426B] text-base">
-          1.0평(3.3m2) :
-        </div> <div class="text-[#989898] inline text-base">
-          1.8(W) x 1.8(L) x 2.2(H)
-        </div>
-      </div>
-      <div class="col-span-3 mb-20">
-        <hr class="border-b-1 mx-auto">
-      </div>
+    <img
+      src="@/assets/farmstore/2015new.png"
+      alt=""
+      class="mx-auto mb-20"
+    >
+    <img
+      src="@/assets/farmstore/2015_new_02.png"
+      alt=""
+      class="mx-auto mb-20"
+    >
+    <div class="w-1/2 mx-auto mb-20">
+      <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
+        판넬의 구조 및 특성
+      </h1>
     </div>
-
+    <img
+      src="@/assets/farmstore/product_02_02.png"
+      alt=""
+      class="mx-auto mb-20"
+    >
+    <div class="w-1/2 mx-auto mb-20">
+      <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
+        판넬 두께에 따른 사용 적정 온도 및 용도
+      </h1>
+    </div>
+    <table class="border-collapse border-gray-300">
+      <tbody>
+        <tr>
+          <td class="border p-4 w-[326px]">
+            1
+          </td>
+          <td class="border p-4">
+            2
+          </td>
+          <td class="border p-4">
+            3
+          </td>
+        </tr>
+        <tr>
+          <td class="border p-4">
+            4
+          </td>
+          <td class="border p-4">
+            5
+          </td>
+          <td class="border p-4">
+            6
+          </td>
+        </tr>
+        <tr>
+          <td class="border p-4">
+            7
+          </td>
+          <td class="border p-4">
+            8
+          </td>
+          <td class="border p-4">
+            9
+          </td>
+        </tr>
+        <tr>
+          <td class="border p-4">
+            10
+          </td>
+          <td class="border p-4">
+            11
+          </td>
+          <td class="border p-4">
+            12
+          </td>
+        </tr>
+        <tr>
+          <td class="border p-4">
+            13
+          </td>
+          <td class="border p-4">
+            14
+          </td>
+          <td class="border p-4">
+            15
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <div class="w-1/2 mx-auto mb-20">
       <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
         설치 사례
