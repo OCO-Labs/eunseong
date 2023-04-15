@@ -15,7 +15,7 @@ export default {
         <img
           src="@/assets/intro/intro3.png"
           alt="이미지"
-          class="w-full h-auto"
+          class="w-full h-[449px]"
         >
         <div class="absolute top-0 left-0 right-1/2 bottom-0 bg-[#1B426B]" />
         <div class="absolute bottom-0 left-0 right-1/2 top-0 px-10 py-20 ">
