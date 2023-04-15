@@ -31,6 +31,118 @@ export default {
     </div>
   </header>
   <main>
-    <div />
+    <div class="w-1/2 mx-auto mb-20">
+      <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
+        현장 사진
+      </h1>
+    </div>
+    <div class="grid grid-cols-2 gap-4 w-1/2 mx-auto mb-20">
+      <img
+        src="@/assets/icecream/Rectangle83.png"
+        alt="현장사진"
+      >
+      <img
+        src="@/assets/icecream/Rectangle84.png"
+        alt="현장사진"
+      >
+      <img
+        src="@/assets/icecream/Rectangle81.png"
+        alt="현장사진"
+      >
+      <img
+        src="@/assets/icecream/Rectangle82.png"
+        alt="현장사진"
+      >
+      <img
+        src="@/assets/icecream/Rectangle79.png"
+        alt="현장사진"
+      >
+      <img
+        src="@/assets/icecream/Rectangle80.png"
+        alt="현장사진"
+      >
+      <img
+        src="@/assets/icecream/Rectangle77.png"
+        alt="현장사진"
+      >
+      <img
+        src="@/assets/icecream/Rectangle78.png"
+        alt="현장사진"
+      >
+    </div>
+    <div class="w-1/2 mx-auto mb-20">
+      <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
+        설치 사례
+      </h1>
+    </div>
+    <div class="grid grid-cols-3 mx-auto w-1/2 gap-4">
+      <div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle71.png"
+          alt="낙농 쇼케이스"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          낙농 쇼케이스
+        </div>
+      </div>
+      <div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle72.png"
+          alt="마트장식장설치"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          마트장식장설치
+        </div>
+      </div><div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle73.png"
+          alt="꽃 쇼케이스"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          꽃 쇼케이스
+        </div>
+      </div><div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle74.png"
+          alt="낙농 쇼케이스"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          낙농 쇼케이스
+        </div>
+      </div><div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle75.png"
+          alt="마트장식장설치"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          마트장식장설치
+        </div>
+      </div><div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle76.png"
+          alt="꽃 쇼케이스"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          꽃 쇼케이스
+        </div>
+      </div><div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle68.png"
+          alt="낙농 쇼케이스"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          낙농 쇼케이스
+        </div>
+      </div><div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle69.png"
+          alt="마트장식장설치"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          마트장식장설치
+        </div>
+      </div>
+      <div class="self-center w-[271px]">
+        <img
+          src="@/assets/refrigerator/Rectangle70.png"
+          alt="꽃 쇼케이스"
+        ><div class="text-center w-[271px] font-bold text-xl">
+          꽃
+          쇼케이스
+        </div>
+      </div>
+    </div>
   </main>
 </template>
