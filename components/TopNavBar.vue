@@ -31,7 +31,7 @@ import CallIcon from './icons/CallIcon.vue'
     </div>
   </header>
   <div class="container mx-auto px-[7rem] h-24">
-    <div class="flex flex-row">
+    <div class="flex flex-row justify-between">
       <img
         src="~/assets/logo.png"
         width="226"
@@ -43,6 +43,139 @@ import CallIcon from './icons/CallIcon.vue'
             class="peer w-32 h-[5.8rem] font-bold text-xl"
           >
             회사소개
+          </button>
+          <div
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+          >
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >About Us</a>
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <button
+            class="peer w-32 h-[5.8rem] font-bold text-xl"
+          >
+            쇼케이스
+          </button>
+          <div
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+          >
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >About Us</a>
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <button
+            class="peer w-40 h-[5.8rem] font-bold text-xl"
+          >
+            냉동/냉장 저장고
+          </button>
+          <div
+            class="hidden absolute peer-hover:flex hover:flex w-40 flex-col bg-white border"
+          >
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >About Us</a>
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <button
+            class="peer w-32 h-[5.8rem] font-bold text-xl"
+          >
+            냉동기계
+          </button>
+          <div
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+          >
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >About Us</a>
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <button
+            class="peer w-32 h-[5.8rem] font-bold text-xl"
+          >
+            시공사례
+          </button>
+          <div
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+          >
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >About Us</a>
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <button
+            class="peer w-32 h-[5.8rem] font-bold text-xl"
+          >
+            공지사항
+          </button>
+          <div
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+          >
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >About Us</a>
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <button
+            class="peer w-32 h-[5.8rem] font-bold text-xl"
+          >
+            견적문의
+          </button>
+          <div
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+          >
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >About Us</a>
+            <a
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+              href="#"
+            >Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <button
+            class="peer w-32 h-[5.8rem] font-bold text-xl"
+          >
+            중고장터
           </button>
           <div
             class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
