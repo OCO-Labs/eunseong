@@ -61,65 +61,67 @@ export default {
         판넬 두께에 따른 사용 적정 온도 및 용도
       </h1>
     </div>
-    <table class="border-collapse border-gray-300">
-      <tbody>
-        <tr>
-          <td class="border p-4 w-[326px]">
-            1
-          </td>
-          <td class="border p-4">
-            2
-          </td>
-          <td class="border p-4">
-            3
-          </td>
-        </tr>
-        <tr>
-          <td class="border p-4">
-            4
-          </td>
-          <td class="border p-4">
-            5
-          </td>
-          <td class="border p-4">
-            6
-          </td>
-        </tr>
-        <tr>
-          <td class="border p-4">
-            7
-          </td>
-          <td class="border p-4">
-            8
-          </td>
-          <td class="border p-4">
-            9
-          </td>
-        </tr>
-        <tr>
-          <td class="border p-4">
-            10
-          </td>
-          <td class="border p-4">
-            11
-          </td>
-          <td class="border p-4">
-            12
-          </td>
-        </tr>
-        <tr>
-          <td class="border p-4">
-            13
-          </td>
-          <td class="border p-4">
-            14
-          </td>
-          <td class="border p-4">
-            15
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="flex flex-col w-1/2 mx-auto mb-20 justify-items-center">
+      <table class="border-collapse border-gray-300">
+        <tbody>
+          <tr>
+            <td class="text-white font-bold text-lg text-center p-4 w-[326px] h-[37px] bg-[#1B426B]">
+              •두께
+            </td>
+            <td class="text-white font-bold text-lg text-center p-4 w-[326px] h-[37px] bg-[#1B426B]">
+              •적정 온도범위
+            </td>
+            <td class="text-white font-bold text-lg text-center p-4 w-[326px] h-[37px] bg-[#1B426B]">
+              •용도
+            </td>
+          </tr>
+          <tr>
+            <td class="border p-4 text-base text-center">
+              75mm
+            </td>
+            <td class="border p-4 text-base text-center">
+              -10℃ ~ +15℃
+            </td>
+            <td class="border p-4 text-base text-center">
+              냉장용, 저온용
+            </td>
+          </tr>
+          <tr>
+            <td class="border p-4 text-base text-center">
+              100mm
+            </td>
+            <td class="border p-4 text-base text-center">
+              -20℃ ~ -10℃
+            </td>
+            <td class="border p-4 text-base text-center">
+              냉장용, 냉동용
+            </td>
+          </tr>
+          <tr>
+            <td class="border p-4 text-base text-center">
+              125mm
+            </td>
+            <td class="border p-4 text-base text-center">
+              -30℃ ~ -20℃
+            </td>
+            <td class="border p-4 text-base text-center">
+              냉동용, 냉동 동결용
+            </td>
+          </tr>
+          <tr>
+            <td class="border p-4 text-base text-center">
+              150mm
+            </td>
+            <td class="border p-4 text-base text-center">
+              -40℃ ~ -30℃
+            </td>
+            <td class="border p-4 text-base text-center">
+              동결용, 급냉용, 초저온용
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <div class="w-1/2 mx-auto mb-20">
       <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
         설치 사례
