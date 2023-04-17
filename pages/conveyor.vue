@@ -8,7 +8,7 @@ export default {
   <header>
     <div class="relative overflow-hidden mb-20">
       <img
-        src="@/assets/refrigerator/refrigerator.png"
+        src="@/assets/part/Banner.png"
         alt="이미지"
         class="w-full h-[449px]"
       >
