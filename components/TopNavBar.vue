@@ -76,7 +76,7 @@ import CallIcon from './icons/CallIcon.vue'
             쇼케이스
           </button>
           <div
-            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
