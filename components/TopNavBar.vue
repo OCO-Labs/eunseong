@@ -32,11 +32,13 @@ import CallIcon from './icons/CallIcon.vue'
   </header>
   <div class="container mx-auto px-[7rem] h-24">
     <div class="flex flex-row justify-between">
-      <img
-        src="~/assets/logo.png"
-        width="226"
-        height="90"
-      >
+      <NuxtLink to="/">
+        <img
+          src="~/assets/logo.png"
+          width="226"
+          height="90"
+        >
+      </NuxtLink>
       <div class="flex flex-row place-self-center">
         <div>
           <button
@@ -45,16 +47,26 @@ import CallIcon from './icons/CallIcon.vue'
             회사소개
           </button>
           <div
-            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
-            <a
+            <NuxtLink
+              to="/intro"
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
-              href="#"
-            >About Us</a>
-            <a
+            >
+              인사말
+            </NuxtLink>
+            <NuxtLink
+              to="/cert"
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
-              href="#"
-            >Contact Us</a>
+            >
+              인증현황
+            </NuxtLink>
+            <NuxtLink
+              to="/map"
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+            >
+              오시는길
+            </NuxtLink>
           </div>
         </div>
         <div>
@@ -69,11 +81,11 @@ import CallIcon from './icons/CallIcon.vue'
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
               href="#"
-            >About Us</a>
+            >쇼케이스</a>
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
               href="#"
-            >Contact Us</a>
+            >제품소개</a>
           </div>
         </div>
         <div>
@@ -83,16 +95,48 @@ import CallIcon from './icons/CallIcon.vue'
             냉동/냉장 저장고
           </button>
           <div
-            class="hidden absolute peer-hover:flex hover:flex w-40 flex-col bg-white border"
+            class="hidden absolute peer-hover:flex hover:flex w-40 flex-col bg-white border z-10"
           >
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
               href="#"
-            >About Us</a>
-            <a
+            >물류보관 저온창고</a>
+            <NuxtLink
+              to="/refrigerator"
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
-              href="#"
-            >Contact Us</a>
+            >
+              냉동, 냉장 저장고
+            </NuxtLink>
+            <NuxtLink
+              to="/farmstore"
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+            >
+              농축산물 저장고
+            </NuxtLink>
+            <NuxtLink
+              to="/icecream"
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+            >
+              아이스크림 저장고
+            </NuxtLink>
+            <NuxtLink
+              to="/carrier"
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+            >
+              캐리어 냉동기 저장시스템
+            </NuxtLink>
+            <NuxtLink
+              to="/radiation"
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+            >
+              방열문/에어커텐
+            </NuxtLink>
+            <NuxtLink
+              to="/heater"
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+            >
+              냉난방/항온항습기/제습기
+            </NuxtLink>
           </div>
         </div>
         <div>
@@ -102,16 +146,32 @@ import CallIcon from './icons/CallIcon.vue'
             냉동기계
           </button>
           <div
-            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
-            <a
+            <NuxtLink
+              to="/part"
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
-              href="#"
-            >About Us</a>
-            <a
+            >
+              부속품 수입 도/소매
+            </NuxtLink>
+            <NuxtLink
+              to="/conveyor"
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
-              href="#"
-            >Contact Us</a>
+            >
+              콘베어 방음설비
+            </NuxtLink>
+            <NuxtLink
+              to="/recorder"
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+            >
+              냉동창고 온도DATA 기록장치
+            </NuxtLink>
+            <NuxtLink
+              to="/freezer"
+              class="px-5 py-3 hover:bg-blue-900 hover:text-white"
+            >
+              냉동기 유니트
+            </NuxtLink>
           </div>
         </div>
         <div>
@@ -121,7 +181,7 @@ import CallIcon from './icons/CallIcon.vue'
             시공사례
           </button>
           <div
-            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
@@ -140,7 +200,7 @@ import CallIcon from './icons/CallIcon.vue'
             공지사항
           </button>
           <div
-            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
@@ -159,7 +219,7 @@ import CallIcon from './icons/CallIcon.vue'
             견적문의
           </button>
           <div
-            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
@@ -178,7 +238,7 @@ import CallIcon from './icons/CallIcon.vue'
             중고장터
           </button>
           <div
-            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border"
+            class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
