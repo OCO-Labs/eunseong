@@ -5,6 +5,12 @@ export default {
 </script>
 
 <template>
+  <img
+    class="w-full mb-32"
+    loading="lazy"
+    src="~/assets/index/big.png"
+    alt="사진"
+  >
   <div class="container mx-auto px-[7rem]">
     <div class="flex flex-col items-center mb-7">
       <h1 class="text-3xl font-bold text-blue-900">
@@ -178,5 +184,30 @@ export default {
         인증 현황 더 보러가기
       </div>
     </div>
+  </div>
+  <div class="flex flex-row justify-center">
+    <iframe
+      width="800"
+      height="500"
+      src="https://www.youtube.com/embed/nhCn5UOuuU4"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    />
+  </div>
+  <div class="flex flex-row justify-center mt-4">
+    <img
+      class="w-[26rem]"
+      loading="lazy"
+      src="~/assets/index/Rectangle 14.png"
+      alt="사진"
+    >
+    <img
+      class="w-[26rem]"
+      loading="lazy"
+      src="~/assets/index/Rectangle 15.png"
+      alt="사진"
+    >
   </div>
 </template>
