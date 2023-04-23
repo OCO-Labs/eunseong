@@ -132,9 +132,50 @@ export default {
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-12">
-      <div class="bg-blue-900 p-1 px-10 font-bold text-white">
+    <div class="flex justify-center mt-12 mb-32">
+      <div class="bg-blue-900 p-2 px-10 font-bold text-white">
         제품 소개 더 보러가기
+      </div>
+    </div>
+    <div class="flex flex-col items-center mb-7">
+      <h1 class="text-3xl font-bold text-blue-900">
+        특허 및 인증
+      </h1>
+      <h2 class="font-bold text-gray-400">
+        특허 기술을 활용하여 개발된 제품으로, 우수한 품질과 기능성을 보장합니다.
+      </h2>
+    </div>
+    <div class="mt-10 container mx-auto px-[14rem] flex flex-row gap-6 justify-center">
+      <img
+        class="w-44 shadow-2xl"
+        loading="lazy"
+        src="~/assets/cert/patent_01.png"
+        alt="사진"
+      >
+      <img
+        class="w-44 shadow-2xl"
+        loading="lazy"
+        src="~/assets/cert/patent_01.png"
+        alt="사진"
+      >
+      <img
+        class="w-44 shadow-2xl"
+        loading="lazy"
+        src="~/assets/cert/patent_01.png"
+        alt="사진"
+      >
+      <img
+        class="w-44 shadow-2xl"
+        loading="lazy"
+        src="~/assets/cert/patent_01.png"
+        alt="사진"
+      >
+    </div>
+  </div>
+  <div class="relative w-full h-72 bg-blue-900 -top-32 -z-10">
+    <div class="flex justify-center pt-48">
+      <div class="bg-white p-2 px-10 font-bold text-blue-900">
+        인증 현황 더 보러가기
       </div>
     </div>
   </div>
