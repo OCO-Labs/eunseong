@@ -29,14 +29,60 @@ export default {
         </div>
       </div>
     </div>
-    <div class="w-1/2 mx-auto mb-20">
+    <div class="w-2/3 mx-auto mb-20">
       <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
         소형 냉동, 냉장 창고 설치 구성도
       </h1>
+      <div class="grid grid-cols-4 justify-items-center mt-10">
+        <div class="w-64 h-64 border shadow-xl rounded-3xl flex flex-col items-center">
+          <img
+            class="w-full rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/refrigerator/Rectangle78.png"
+            alt="사진"
+          >
+          <div class="mt-4 text-xl font-bold text-blue-900">
+            조립과정
+          </div>
+        </div>
+        <div class="w-64 h-64 border shadow-xl rounded-3xl flex flex-col items-center">
+          <img
+            class="w-full rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/refrigerator/Rectangle80.png"
+            alt="사진"
+          >
+          <div class="mt-4 text-xl font-bold text-blue-900">
+            생산과정
+          </div>
+        </div>
+        <div class="w-64 h-64 border shadow-xl rounded-3xl flex flex-col items-center">
+          <img
+            class="w-full rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/refrigerator/Rectangle82.png"
+            alt="사진"
+          >
+          <div class="mt-4 text-xl font-bold text-blue-900">
+            완성도
+          </div>
+        </div>
+        <div class="w-64 h-64 border shadow-xl rounded-3xl flex flex-col items-center">
+          <img
+            class="w-full rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/refrigerator/Rectangle84.png"
+            alt="사진"
+          >
+          <div class="mt-4 text-xl font-bold text-blue-900">
+            도어조립
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-    <div class="w-1/2 mx-auto mb-20">
+    <div class="w-2/3 mx-auto mb-20">
       <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
         냉동, 냉장창고 설치전문
       </h1>
@@ -102,7 +148,7 @@ export default {
       </div>
     </div>
 
-    <div class="w-1/2 mx-auto mb-20">
+    <div class="w-2/3 mx-auto mb-20">
       <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
         설치 사례
       </h1>
