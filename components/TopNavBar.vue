@@ -78,10 +78,12 @@ import CallIcon from './icons/CallIcon.vue'
           <div
             class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
-            <a
+            <NuxtLink
+              to="/showcase"
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
-              href="#"
-            >쇼케이스</a>
+            >
+              쇼케이스
+            </NuxtLink>
             <a
               class="px-5 py-3 hover:bg-blue-900 hover:text-white"
               href="#"
