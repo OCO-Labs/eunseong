@@ -200,13 +200,13 @@ export default {
     <img
       class="w-[26rem]"
       loading="lazy"
-      src="~/assets/index/Rectangle 14.png"
+      src="~/assets/index/Rectangle14.png"
       alt="사진"
     >
     <img
       class="w-[26rem]"
       loading="lazy"
-      src="~/assets/index/Rectangle 15.png"
+      src="~/assets/index/Rectangle15.png"
       alt="사진"
     >
   </div>
