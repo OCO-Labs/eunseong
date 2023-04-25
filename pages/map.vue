@@ -67,7 +67,7 @@ export default {
               경기 남양주시 진건읍 진건오남로390번길 169-50
             </div>
           </div>
-          <div class="w-[0.05rem] bg-blue-900" />
+          <div class="w-[0.05rem] bg-[#1B426B]" />
           <div class="flex flex-col w-1/2 items-center">
             <svg
               width="31"

@@ -41,7 +41,7 @@ export default {
             src="~/assets/refrigerator/Rectangle78.png"
             alt="사진"
           >
-          <div class="mt-4 text-xl font-bold text-blue-900">
+          <div class="mt-4 text-xl font-bold text-[#1B426B]">
             조립과정
           </div>
         </div>
@@ -52,7 +52,7 @@ export default {
             src="~/assets/refrigerator/Rectangle80.png"
             alt="사진"
           >
-          <div class="mt-4 text-xl font-bold text-blue-900">
+          <div class="mt-4 text-xl font-bold text-[#1B426B]">
             생산과정
           </div>
         </div>
@@ -63,7 +63,7 @@ export default {
             src="~/assets/refrigerator/Rectangle82.png"
             alt="사진"
           >
-          <div class="mt-4 text-xl font-bold text-blue-900">
+          <div class="mt-4 text-xl font-bold text-[#1B426B]">
             완성도
           </div>
         </div>
@@ -74,7 +74,7 @@ export default {
             src="~/assets/refrigerator/Rectangle84.png"
             alt="사진"
           >
-          <div class="mt-4 text-xl font-bold text-blue-900">
+          <div class="mt-4 text-xl font-bold text-[#1B426B]">
             도어조립
           </div>
         </div>

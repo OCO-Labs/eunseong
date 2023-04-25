@@ -44,11 +44,11 @@ export default {
             src="~/assets/showcase/Rectangle51.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-blue-900">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl group-hover:text-white">
               정육 쇼케이스
             </h2>
-            <p class="mt-3 text-lg text-blue-900 group-hover:text-white">
+            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
               상세보기
             </p>
           </div>
@@ -60,11 +60,11 @@ export default {
             src="~/assets/showcase/Rectangle19.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-blue-900">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl group-hover:text-white">
               마트 쇼케이스
             </h2>
-            <p class="mt-3 text-lg text-blue-900 group-hover:text-white">
+            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
               상세보기
             </p>
           </div>
@@ -76,11 +76,11 @@ export default {
             src="~/assets/showcase/Rectangle21.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-blue-900">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl group-hover:text-white">
               꽃 쇼케이스
             </h2>
-            <p class="mt-3 text-lg text-blue-900 group-hover:text-white">
+            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
               상세보기
             </p>
           </div>
@@ -93,7 +93,7 @@ export default {
       </h1>
       <div class="flex flex-row h-80 mt-20 justify-between gap-4">
         <div class="w-1/2 flex flex-col space-y-4">
-          <div class="bg-blue-900 p-4 px-14 rounded-full font-bold text-center text-white text-2xl">
+          <div class="bg-[#1B426B] p-4 px-14 rounded-full font-bold text-center text-white text-2xl">
             전제품 스테인레스 드레인판 적용
           </div>
           <div class="ml-2">
@@ -108,7 +108,7 @@ export default {
         </div>
         <div class="w-[0.05rem] bg-gray-400" />
         <div class="w-1/2 flex flex-col space-y-4">
-          <div class="bg-blue-900 p-4 px-14 rounded-full font-bold text-center text-white text-2xl">
+          <div class="bg-[#1B426B] p-4 px-14 rounded-full font-bold text-center text-white text-2xl">
             전제품 LED LAMP 기본 적용
           </div>
           <div class="ml-2">
@@ -133,7 +133,7 @@ export default {
       </div>
       <div class="flex flex-row h-80 mt-10 justify-between gap-4">
         <div class="w-1/2 flex flex-col space-y-4">
-          <div class="bg-blue-900 p-4 px-14 rounded-full font-bold text-center text-white text-2xl">
+          <div class="bg-[#1B426B] p-4 px-14 rounded-full font-bold text-center text-white text-2xl">
             상품 전시 공간 극대화
           </div>
           <div class="ml-2">
@@ -142,7 +142,7 @@ export default {
         </div>
         <div class="w-[0.05rem] bg-gray-400" />
         <div class="w-1/2 flex flex-col space-y-4">
-          <div class="bg-blue-900 p-4 px-10 rounded-full font-bold text-center text-white text-2xl">
+          <div class="bg-[#1B426B] p-4 px-10 rounded-full font-bold text-center text-white text-2xl">
             대 / 중 / 소형 마트, 편의점, 정육시설
           </div>
           <div class="ml-2">
