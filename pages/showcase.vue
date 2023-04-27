@@ -91,7 +91,7 @@ export default {
       <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full">
         오픈 쇼케이스
       </h1>
-      <div class="flex flex-row h-80 mt-20 justify-between gap-4">
+      <div class="flex flex-row h-80 mt-20 justify-between gap-12">
         <div class="w-1/2 flex flex-col space-y-4">
           <div class="bg-[#1B426B] p-4 px-14 rounded-full font-bold text-center text-white text-2xl">
             전제품 스테인레스 드레인판 적용
@@ -131,7 +131,7 @@ export default {
         <div class="w-1/2 h-[0.05rem] bg-gray-400" />
         <div class="w-1/2 h-[0.05rem] bg-gray-400" />
       </div>
-      <div class="flex flex-row h-80 mt-10 justify-between gap-4">
+      <div class="flex flex-row h-80 mt-10 justify-between gap-12">
         <div class="w-1/2 flex flex-col space-y-4">
           <div class="bg-[#1B426B] p-4 px-14 rounded-full font-bold text-center text-white text-2xl">
             상품 전시 공간 극대화

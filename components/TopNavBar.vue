@@ -99,10 +99,12 @@ import CallIcon from './icons/CallIcon.vue'
           <div
             class="hidden absolute peer-hover:flex hover:flex w-40 flex-col bg-white border z-10"
           >
-            <a
+            <NuxtLink
+              to="/storage"
               class="px-5 py-3 hover:bg-[#1B426B] hover:text-white"
-              href="#"
-            >물류보관 저온창고</a>
+            >
+              물류보관 저온창고
+            </NuxtLink>
             <NuxtLink
               to="/refrigerator"
               class="px-5 py-3 hover:bg-[#1B426B] hover:text-white"
