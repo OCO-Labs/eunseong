@@ -53,14 +53,14 @@ export default {
     </div>
     <div class="w-2/3 mx-auto ">
       <div class="mt-10 grid grid-cols-4 justify-items-center">
-        <div class="w-[249px] h-[341px] border-2 rounded-3xl group">
+        <div class="w-[249px] h-[341px] rounded-3xl group">
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
             src="~/assets/product/Rectangle74.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold border rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
@@ -69,14 +69,14 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] border-2 rounded-3xl group">
+        <div class="w-[249px] h-[341px] rounded-3xl group">
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
             src="~/assets/product/Rectangle74-1.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
@@ -85,14 +85,14 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] border-2 rounded-3xl group">
+        <div class="w-[249px] h-[341px] rounded-3xl group">
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
             src="~/assets/product/Rectangle74-2.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
@@ -101,83 +101,468 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] border-2 rounded-3xl group">
+        <div class="w-[249px] h-[341px] rounded-3xl group">
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
             src="~/assets/product/Rectangle74-3.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
-            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+            <p class="text-xs text-[#494949] text-center group-hover:text-white">
               대용량 CVS 오픈 <br>다단쇼케이스
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] border-2 rounded-3xl group">
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
-            src="~/assets/product/Rectangle74.png"
+            src="~/assets/product/Rectangle74-4.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="text-xs text-[#494949] text-center group-hover:text-white ">
+              대용량 CVS 도어형 <br>다용도 쇼케이스
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-5.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
             <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
-              표준형 오픈 다단 쇼케이스
+              세미다단 오픈 쇼케이스
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] border-2 rounded-3xl group">
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
-            src="~/assets/product/Rectangle74-1.png"
+            src="~/assets/product/Rectangle74-6.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
             <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
-              표준 도어형 다단 쇼케이스
+              냉장/냉동 평대
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] border-2 rounded-3xl group">
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
-            src="~/assets/product/Rectangle74-2.png"
+            src="~/assets/product/Rectangle74-7.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
-            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
-              마트 쇼케이스
-            </h2>
-            <p class="mt-3 text-sm text-center text-[#494949] group-hover:text-white">
-              유럽형 오픈 다단 쇼케이스
-            </p>
-          </div>
-        </div>
-        <div class="w-[249px] h-[341px] border-2 rounded-3xl group">
-          <img
-            class="w-full border-b rounded-t-3xl"
-            loading="lazy"
-            src="~/assets/product/Rectangle74-3.png"
-            alt="사진"
-          >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
             <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
-              대용량 CVS 오픈 <br>다단쇼케이스
+              유럽형 반찬대면 쇼케이스
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle79.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              냉동식품 평대
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle81.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              생선비냉 서랍형
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle83-1.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              다용도 냉장평대
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle85-1.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              와이드 냉동평대
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle85-1.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class=" text-xs text-[#494949] text-center group-hover:text-white">
+              앙코르-오픈다단/<br>
+              일배낙농,유제품
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle85.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              앙코르-세미다단
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle83-2.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              벽면형온장고
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle85-2.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              앙코르-오픈다단/청과,야채
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle87.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              카두만두-다용도 1도어
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle89.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              카두만두-다용도 2도어
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle83-3.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              핑야오-수경야채4각
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle85-3.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              마트 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              타지마할-양념육
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-8.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              고급형 정육대면 직냉식(2,3단)
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-9.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              앙코르-오픈다단/정육,생선
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-10.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              유럽형 정육대면
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-11.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              이스타나-유럽 A,B형
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-12.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              이스타나-일반 A,B형
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-13.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              이스타나-일반형 코너
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-14.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              육절기
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-15.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              육절기
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-16.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              골절기
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-17.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              정육 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              골절기
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-18.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              꽃 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              <br>
+            </p>
+          </div>
+        </div>
+        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+          <img
+            class="w-full border-b rounded-t-3xl"
+            loading="lazy"
+            src="~/assets/product/Rectangle74-19.png"
+            alt="사진"
+          >
+          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+            <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
+              꽃 쇼케이스
+            </h2>
+            <p class="mt-3 text-sm text-[#494949] text-center group-hover:text-white">
+              <br>
             </p>
           </div>
         </div>
