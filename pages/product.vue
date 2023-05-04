@@ -1,6 +1,13 @@
 <script>
 export default {
-  name: 'ProductPage'
+  name: 'ProductPage',
+  data () {
+    return {
+      meat: true,
+      mart: true,
+      flower: true
+    }
+  }
 }
 </script>
 
@@ -38,22 +45,37 @@ export default {
       </h1>
     </div>
     <div class="flex flex-row items-center justify-center space-x-12 ">
-      <button class="border rounded-full h-[46px] w-[143px] text-xl text-[#1B426B] hover:bg-[#1B426B] hover:text-white text-center">
+      <button
+        class="border rounded-full h-[46px] w-[143px] text-xl text-[#1B426B] hover:bg-[#1B426B] hover:text-white text-center"
+        @click=" flower=true, mart=true, meat=true"
+      >
         전체
       </button>
-      <button class="border rounded-full h-[46px] w-[143px] text-xl text-[#1B426B] hover:bg-[#1B426B] hover:text-white text-center">
+      <button
+        class="border rounded-full h-[46px] w-[143px] text-xl text-[#1B426B] hover:bg-[#1B426B] hover:text-white text-center"
+        @click="mart=false, flower=false, meat=true"
+      >
         정육 쇼케이스
       </button>
-      <button class="border rounded-full h-[46px] w-[143px] text-xl text-[#1B426B] hover:bg-[#1B426B] hover:text-white text-center">
+      <button
+        class="border rounded-full h-[46px] w-[143px] text-xl text-[#1B426B] hover:bg-[#1B426B] hover:text-white text-center"
+        @click="mart=true, flower=false, meat=false"
+      >
         마트 쇼케이스
       </button>
-      <button class="border rounded-full h-[46px] w-[143px] text-xl text-[#1B426B] hover:bg-[#1B426B] hover:text-white text-center">
+      <button
+        class="border rounded-full h-[46px] w-[143px] text-xl text-[#1B426B] hover:bg-[#1B426B] hover:text-white text-center"
+        @click="mart=false, flower=true, meat=false"
+      >
         꽃 쇼케이스
       </button>
     </div>
     <div class="w-2/3 mx-auto ">
       <div class="mt-10 grid grid-cols-4 justify-items-center">
-        <div class="w-[249px] h-[341px] rounded-3xl group">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -69,14 +91,20 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
             src="~/assets/product/Rectangle74-1.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div
+            v-if="mart"
+            class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]"
+          >
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
@@ -85,7 +113,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -101,7 +132,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -117,7 +151,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -133,7 +170,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -149,7 +189,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -165,7 +208,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -181,7 +227,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -197,7 +246,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -213,7 +265,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -229,7 +284,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -245,7 +303,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -262,7 +323,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -278,7 +342,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -294,7 +361,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -310,7 +380,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -326,7 +399,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -342,14 +418,20 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
             src="~/assets/product/Rectangle83-3.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div
+
+            class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]"
+          >
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               마트 쇼케이스
             </h2>
@@ -358,7 +440,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="mart"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -374,14 +459,20 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
             src="~/assets/product/Rectangle74-8.png"
             alt="사진"
           >
-          <div class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+          <div
+
+            class="flex flex-col px-5 pt-[1.4rem] pb-[1.7rem] border font-bold rounded-b-3xl group-hover:bg-[#1B426B]"
+          >
             <h2 class="text-xl text-[#1B426B] text-center group-hover:text-white">
               정육 쇼케이스
             </h2>
@@ -390,7 +481,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -406,7 +500,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -422,7 +519,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -438,7 +538,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -454,7 +557,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -470,7 +576,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -486,7 +595,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -502,7 +614,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -518,7 +633,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="meat"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -534,7 +652,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="flower"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
@@ -550,7 +671,10 @@ export default {
             </p>
           </div>
         </div>
-        <div class="w-[249px] h-[341px] rounded-3xl group mt-4">
+        <div
+          v-if="flower"
+          class="w-[249px] h-[341px] rounded-3xl group mt-4"
+        >
           <img
             class="w-full border-b rounded-t-3xl"
             loading="lazy"
