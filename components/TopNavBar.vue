@@ -206,14 +206,12 @@ import CallIcon from './icons/CallIcon.vue'
           <div
             class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
-            <a
+            <NuxtLink
+              to="/notice"
               class="px-5 py-3 hover:bg-[#1B426B] hover:text-white"
-              href="#"
-            >About Us</a>
-            <a
-              class="px-5 py-3 hover:bg-[#1B426B] hover:text-white"
-              href="#"
-            >Contact Us</a>
+            >
+              공지사항
+            </NuxtLink>
           </div>
         </div>
         <div>
