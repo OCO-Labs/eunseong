@@ -12,6 +12,7 @@ onMounted(() => {
 // const documentSnapshots = ref()
 async function getRecentNotice () {
   const db = getFirestore()
+  let idx = 1
   const q = query(collection(db, 'notice'))
   // documentSnapshots.value = await getDocs(q)
   onSnapshot(q, (snapshot) => {
@@ -19,8 +20,10 @@ async function getRecentNotice () {
     snapshot.forEach((doc) => {
       recentNotice.value.push({
         id: doc.id,
+        idx,
         ...doc.data()
       })
+      idx++
     })
   })
 }
@@ -130,7 +133,7 @@ export default {
             :key="index"
             class="text-center border-y h-14"
           >
-            <td>{{ index + 1 }}</td>
+            <td>{{ recentNotice.length - (notice.idx - 1) }}</td>
             <td>{{ notice.title }}</td>
             <td>관리자</td>
             <td>2020-01-02</td>
