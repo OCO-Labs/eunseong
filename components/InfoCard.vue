@@ -123,22 +123,28 @@ async function getRecentNotice () {
             <input
               class="w-full border bg-gray-50 p-1 px-3 placeholder:text-sm"
               placeholder="성함"
+              disabled
               type="text"
             >
             <input
               class="w-full border bg-gray-50 p-1 px-3 placeholder:text-sm"
               placeholder="연락처(010-0000-0000)"
               type="text"
+              disabled
             >
             <textarea
               class="w-full border bg-gray-50 p-1 px-3 placeholder:text-sm"
               placeholder="상담내용"
               type="text"
+              disabled
             />
           </div>
-          <div class="bg-[#1B426B] text-sm w-[8rem] p-1 text-center text-white font-bold mx-auto mt-3.5">
+          <NuxtLink
+            to="/request"
+            class="bg-[#1B426B] text-sm w-[8rem] p-1 text-center text-white font-bold mx-auto mt-3.5"
+          >
             빠른견적상담하기
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </div>

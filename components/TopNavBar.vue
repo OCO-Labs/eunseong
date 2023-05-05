@@ -218,19 +218,17 @@ import CallIcon from './icons/CallIcon.vue'
           <button
             class="peer w-32 h-[6rem] font-bold text-xl"
           >
-            견적문의
+            견적의뢰
           </button>
           <div
             class="hidden absolute peer-hover:flex hover:flex w-32 flex-col bg-white border z-10"
           >
-            <a
+            <NuxtLink
+              to="/request"
               class="px-5 py-3 hover:bg-[#1B426B] hover:text-white"
-              href="#"
-            >About Us</a>
-            <a
-              class="px-5 py-3 hover:bg-[#1B426B] hover:text-white"
-              href="#"
-            >Contact Us</a>
+            >
+              견적의뢰
+            </NuxtLink>
           </div>
         </div>
         <div>
