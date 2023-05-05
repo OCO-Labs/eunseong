@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, computed, reactive } from 'vue'
+import { ref, onMounted, computed, watch } from 'vue'
 import { query, collection, onSnapshot, getFirestore } from 'firebase/firestore'
 import SearchIcon from '~/components/icons/SearchIcon.vue'
 
@@ -9,12 +9,10 @@ onMounted(() => {
   getRecentNotice()
 })
 
-// const documentSnapshots = ref()
 async function getRecentNotice () {
   const db = getFirestore()
   let idx = 1
   const q = query(collection(db, 'notice'))
-  // documentSnapshots.value = await getDocs(q)
   onSnapshot(q, (snapshot) => {
     recentNotice.value = []
     snapshot.forEach((doc) => {
@@ -28,48 +26,47 @@ async function getRecentNotice () {
   })
 }
 
-// async function saveNotice () {
-//   const db = getFirestore()
-//   const docRef = await addDoc(collection(db, 'notice'), {
-//     title: 'title'
-//   })
-//   console.log('Document written with ID: ', docRef.id)
-// }
+const currentPage = ref(1)
+const pageSize = ref(10)
 
-const state = reactive({
-  currentPage: 0,
-  pageSize: 8
+const searchKeyword = ref('')
+const filteredNotices = computed(() => {
+  return recentNotice.value.filter(notice =>
+    notice.title.toLowerCase().includes(searchKeyword.value.toLowerCase())
+  )
 })
 
-const visiblePosts = computed(() => {
-  const start = state.currentPage * state.pageSize
-  const end = start + state.pageSize
-  return recentNotice.value.slice(start, end)
+const paginateNotices = computed(() => {
+  const start = (currentPage.value - 1) * pageSize.value
+  const end = start + pageSize.value
+  return filteredNotices.value.slice(start, end)
 })
 
-const pageCount = computed(() => {
-  return Math.ceil(recentNotice.value.length / state.pageSize)
-})
+const filterNotices = () => {
+  currentPage.value = 1
+}
 
-const canNextPage = computed(() => {
-  return state.currentPage < pageCount.value - 1
-})
+watch(searchKeyword, filterNotices)
 
-const canPreviousPage = computed(() => {
-  return state.currentPage > 0
-})
-
-function nextPage () {
-  if (canNextPage.value) {
-    state.currentPage++
+const prevPage = () => {
+  if (currentPage.value > 1) {
+    currentPage.value--
   }
 }
 
-function previousPage () {
-  if (canPreviousPage.value) {
-    state.currentPage--
+const nextPage = () => {
+  if (currentPage.value < Math.ceil(filteredNotices.value.length / pageSize.value)) {
+    currentPage.value++
   }
 }
+
+const prevButtonDisabled = computed(() => {
+  return currentPage.value === 1
+})
+
+const nextButtonDisabled = computed(() => {
+  return currentPage.value === Math.ceil(filteredNotices.value.length / pageSize.value)
+})
 </script>
 
 <script>
@@ -127,14 +124,18 @@ export default {
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody v-if="!searching">
           <tr
-            v-for="(notice, index) in visiblePosts"
+            v-for="(notice, index) in paginateNotices"
             :key="index"
             class="text-center border-y h-14"
           >
             <td>{{ recentNotice.length - (notice.idx - 1) }}</td>
-            <td>{{ notice.title }}</td>
+            <td>
+              <NuxtLink :to="`/notice/${notice.id}`">
+                {{ notice.title }}
+              </NuxtLink>
+            </td>
             <td>관리자</td>
             <td>2020-01-02</td>
           </tr>
@@ -144,6 +145,7 @@ export default {
         <form class="w-full max-w-sm">
           <div class="flex items-center border-b border-[#1B426B] py-2">
             <input
+              v-model="searchKeyword"
               class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
               type="text"
               placeholder="검색어를 입력해주세요"
@@ -157,17 +159,19 @@ export default {
           </div>
         </form>
       </div>
-      <div class="flex justify-center gap-1 mb-12">
+      <div
+        class="flex justify-center gap-1 mb-12"
+      >
         <button
           class="w-16 rounded-lg p-1 bg-[#1B426B] disabled:bg-gray-200 text-white font-bold"
-          :disabled="!canPreviousPage"
-          @click="previousPage"
+          :disabled="prevButtonDisabled"
+          @click="prevPage"
         >
           이전
         </button>
         <button
           class="w-16 rounded-lg p-1 bg-[#1B426B] disabled:bg-gray-200 text-white font-bold"
-          :disabled="!canNextPage"
+          :disabled="nextButtonDisabled"
           @click="nextPage"
         >
           다음
