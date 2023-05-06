@@ -11,16 +11,36 @@ const route = useRoute()
 
 const notice = ref()
 const title = ref('')
+const name = ref('')
+const tel = ref('')
+const content = ref('')
+
+const passwordCheck = ref(false)
+
+const passwordInput = ref('')
+const password = ref('')
+
+function passwordChecking () {
+  if (passwordInput.value == password.value) {
+    passwordCheck.value = true
+  } else {
+    alert('비밀번호가 틀립니다!')
+  }
+}
 
 async function getNotice () {
   const db = getFirestore()
-  const docRef = doc(db, 'notice', `${route.params.id}`)
+  const docRef = doc(db, 'request', `${route.params.id}`)
   const docSnap = await getDoc(docRef)
 
   if (docSnap.exists()) {
     console.log('Document data:', docSnap.data())
     notice.value = (docSnap.data())
     title.value = docSnap.data().title
+    name.value = docSnap.data().name
+    tel.value = docSnap.data().tel
+    content.value = docSnap.data().content
+    password.value = docSnap.data().password
   } else {
   // docSnap.data() will be undefined in this case
     console.log('No such document!')
@@ -60,41 +80,69 @@ async function getNotice () {
       <div class="text-4xl font-bold mb-2">
         견적의뢰
       </div>
-      <table class="table-fixed w-full">
-        <tbody>
-          <tr class="border-t-2 border-gray-600 h-14">
-            <td class="w-1/12 bg-gray-100 px-4 font-bold">
-              제목
-            </td>
-            <td class="w-11/12 px-4">
-              {{ title }}
-            </td>
-          </tr>
-          <tr class="border-y h-14">
-            <td class="bg-gray-100 px-4 font-bold">
-              작성자
-            </td>
-            <td class="px-4">
-              관리자
-            </td>
-          </tr>
-          <tr class="border-y h-14">
-            <td class="bg-gray-100 px-4 font-bold">
-              작성일
-            </td>
-            <td class="px-4">
-              2022-10-20
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="p-12">
-        {{ title }}
+      <div v-if="passwordCheck">
+        <table class="table-fixed w-full">
+          <tbody>
+            <tr class="border-t-2 border-gray-600 h-14">
+              <td class="w-1/12 bg-gray-100 px-4 font-bold">
+                제목
+              </td>
+              <td class="w-11/12 px-4">
+                {{ title }}
+              </td>
+            </tr>
+            <tr class="border-y h-14">
+              <td class="bg-gray-100 px-4 font-bold">
+                작성자
+              </td>
+              <td class="px-4">
+                {{ name }}
+              </td>
+            </tr>
+            <tr class="border-y h-14">
+              <td class="bg-gray-100 px-4 font-bold">
+                작성일
+              </td>
+              <td class="px-4">
+                2022-10-20
+              </td>
+            </tr>
+            <tr class="border-y h-14">
+              <td class="bg-gray-100 px-4 font-bold">
+                전화번호
+              </td>
+              <td class="px-4">
+                {{ tel }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="p-12">
+          {{ content }}
+        </div>
+      </div>
+      <div v-else>
+        <div class="flex flex-col items-center my-12">
+          <div class="font-bold">
+            비밀번호 입력
+          </div>
+          <input
+            v-model="passwordInput"
+            class="border"
+            type="password"
+          >
+          <button
+            class="bg-[#1B426B] text-white font-bold px-4 py-1 my-2"
+            @click="passwordChecking"
+          >
+            확인
+          </button>
+        </div>
       </div>
       <hr>
       <div class="flex justify-end mt-3">
         <NuxtLink
-          to="/notice"
+          to="/request"
           class="px-4 py-1 w-20 text-center rounded-lg text-white font-bold bg-[#1B426B]"
         >
           목록

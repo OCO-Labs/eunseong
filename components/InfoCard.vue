@@ -140,7 +140,7 @@ async function getRecentNotice () {
             />
           </div>
           <NuxtLink
-            to="/request"
+            to="/request/estimate"
             class="bg-[#1B426B] text-sm w-[8rem] p-1 text-center text-white font-bold mx-auto mt-3.5"
           >
             빠른견적상담하기

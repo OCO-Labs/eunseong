@@ -12,7 +12,7 @@ onMounted(() => {
 async function getRecentNotice () {
   const db = getFirestore()
   let idx = 1
-  const q = query(collection(db, 'notice'))
+  const q = query(collection(db, 'request'))
   onSnapshot(q, (snapshot) => {
     recentNotice.value = []
     snapshot.forEach((doc) => {
