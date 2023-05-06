@@ -92,6 +92,8 @@ export default {
           로그아웃
         </button>
       </div>
+      <!-- 여기에 '공지작성', '중고장터 작성' 버튼 두개 만들고 각각 noticeState, marketState 라는  ref() 변수 만들고 버튼 클릭하면 true 하나씩 true되게. 둘다 동시에 true가 될 순 없음 -->
+      <!-- 그리고 지금 견적의뢰 폼 복사해와서 공지작성 폼, 중고작성 폼 두 개 만들고 noticeState, marketState 값 받아서 true면 폼 보이게 -->
     </div>
   </div>
 </template>
