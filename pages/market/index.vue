@@ -104,7 +104,7 @@ const setActiveCategory = (category) => {
   </header>
   <main>
     <div class="w-2/3 mx-auto">
-      <div class="text-3xl font-bold mb-2">
+      <div class="text-4xl font-bold mb-2">
         중고장터
       </div>
       <div class="w-full h-[0.05rem] bg-black" />
