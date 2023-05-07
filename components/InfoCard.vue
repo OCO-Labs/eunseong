@@ -11,7 +11,7 @@ onMounted(() => {
 // const documentSnapshots = ref()
 async function getRecentNotice () {
   const db = getFirestore()
-  const q = query(collection(db, 'notice'), limit(8))
+  const q = query(collection(db, 'notices'), limit(8))
   // documentSnapshots.value = await getDocs(q)
   onSnapshot(q, (snapshot) => {
     recentNotice.value = []
