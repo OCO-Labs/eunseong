@@ -11,20 +11,32 @@ const route = useRoute()
 
 const notice = ref()
 const title = ref('')
+const createdAt = ref()
 
 async function getNotice () {
   const db = getFirestore()
-  const docRef = doc(db, 'notice', `${route.params.id}`)
+  const docRef = doc(db, 'notices', `${route.params.id}`)
   const docSnap = await getDoc(docRef)
 
   if (docSnap.exists()) {
     console.log('Document data:', docSnap.data())
     notice.value = (docSnap.data())
     title.value = docSnap.data().title
+    createdAt.value = docSnap.data().createdAt
   } else {
   // docSnap.data() will be undefined in this case
     console.log('No such document!')
   }
+}
+
+function formatDate (timestamp) {
+  const date = new Date(timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000)
+
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+
+  return `${year}-${month}-${day}`
 }
 </script>
 
@@ -83,7 +95,9 @@ async function getNotice () {
               작성일
             </td>
             <td class="px-4">
-              2022-10-20
+              <span v-if="createdAt">
+                {{ formatDate(createdAt) }}
+              </span>
             </td>
           </tr>
         </tbody>

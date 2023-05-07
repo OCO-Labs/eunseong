@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { getFirestore, addDoc, collection } from 'firebase/firestore'
+import { getFirestore, addDoc, collection, serverTimestamp } from 'firebase/firestore'
 import { useRouter } from 'nuxt/app'
 
 const router = useRouter()
@@ -18,7 +18,8 @@ async function saveRequest () {
       password: passwordInput.value,
       title: titleInput.value,
       tel: telInput.value,
-      content: contentInput.value
+      content: contentInput.value,
+      createdAt: serverTimestamp()
     })
     console.log('Document written with ID: ', docRef.id)
     alert('신청 되었습니다!')
@@ -174,17 +175,19 @@ export default {
           수집하는 개인정보 항목, 수집/이용목적, 개인정보보유기간에 동의합니다.
         </div></label>
 
-      <div class="flex row justify-end mt-4">
-        <button @click="saveRequest">
+      <div class="flex row justify-end mt-4 gap-2">
+        <button
+          class="bg-[#1B426B] text-white px-2 rounded-lg font-bold"
+          @click="saveRequest"
+        >
           글쓰기
         </button>
-        <button>
-          <input
-            class="border hover:bg-violet-600 active:bg-violet-700 border-solid bg-[#B6B6B6] rounded-lg text-white font-sans w-24 text-sm"
-            type="submit"
-            value="목록"
-          >
-        </button>
+        <NuxtLink
+          to="/request"
+          class="bg-[#1B426B] text-white px-2 rounded-lg font-bold"
+        >
+          목록
+        </NuxtLink>
       </div>
     </div>
   </main>

@@ -12,7 +12,7 @@ onMounted(() => {
 async function getRecentNotice () {
   const db = getFirestore()
   let idx = 1
-  const q = query(collection(db, 'notice'))
+  const q = query(collection(db, 'notices'))
   onSnapshot(q, (snapshot) => {
     recentNotice.value = []
     snapshot.forEach((doc) => {
@@ -65,8 +65,21 @@ const prevButtonDisabled = computed(() => {
 })
 
 const nextButtonDisabled = computed(() => {
-  return currentPage.value === Math.ceil(filteredNotices.value.length / pageSize.value)
+  return (
+    currentPage.value === Math.ceil(filteredNotices.value.length / pageSize.value) ||
+    filteredNotices.value.length === 0
+  )
 })
+
+function formatDate (timestamp) {
+  const date = new Date(timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000)
+
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+
+  return `${year}-${month}-${day}`
+}
 </script>
 
 <script>
@@ -137,7 +150,7 @@ export default {
               </NuxtLink>
             </td>
             <td>관리자</td>
-            <td>2020-01-02</td>
+            <td>{{ formatDate(notice.createdAt) }}</td>
           </tr>
         </tbody>
       </table>

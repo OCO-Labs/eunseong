@@ -14,6 +14,7 @@ const title = ref('')
 const name = ref('')
 const tel = ref('')
 const content = ref('')
+const createdAt = ref()
 
 const passwordCheck = ref(false)
 
@@ -41,10 +42,21 @@ async function getNotice () {
     tel.value = docSnap.data().tel
     content.value = docSnap.data().content
     password.value = docSnap.data().password
+    createdAt.value = docSnap.data().createdAt
   } else {
   // docSnap.data() will be undefined in this case
     console.log('No such document!')
   }
+}
+
+function formatDate (timestamp) {
+  const date = new Date(timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000)
+
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+
+  return `${year}-${month}-${day}`
 }
 </script>
 
@@ -104,7 +116,7 @@ async function getNotice () {
                 작성일
               </td>
               <td class="px-4">
-                2022-10-20
+                {{ formatDate(createdAt) }}
               </td>
             </tr>
             <tr class="border-y h-14">

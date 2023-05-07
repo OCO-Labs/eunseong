@@ -11,20 +11,36 @@ const route = useRoute()
 
 const notice = ref()
 const title = ref('')
+const createdAt = ref()
+const content = ref('')
+const imageUrl = ref()
 
 async function getNotice () {
   const db = getFirestore()
-  const docRef = doc(db, 'market', `${route.params.id}`)
+  const docRef = doc(db, 'market-items', `${route.params.id}`)
   const docSnap = await getDoc(docRef)
 
   if (docSnap.exists()) {
     console.log('Document data:', docSnap.data())
     notice.value = (docSnap.data())
     title.value = docSnap.data().title
+    createdAt.value = docSnap.data().createdAt
+    content.value = docSnap.data().content
+    imageUrl.value = docSnap.data().imageUrl
   } else {
   // docSnap.data() will be undefined in this case
     console.log('No such document!')
   }
+}
+
+function formatDate (timestamp) {
+  const date = new Date(timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000)
+
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+
+  return `${year}-${month}-${day}`
 }
 </script>
 
@@ -83,18 +99,25 @@ async function getNotice () {
               작성일
             </td>
             <td class="px-4">
-              2022-10-20
+              <span v-if="createdAt">
+                {{ formatDate(createdAt) }}
+              </span>
             </td>
           </tr>
         </tbody>
       </table>
       <div class="p-12">
-        {{ title }}
+        {{ content }}
+        <img
+          :src="`${imageUrl}`"
+          alt="이미지"
+          class="object-cover h-72"
+        >
       </div>
       <hr>
       <div class="flex justify-end mt-3">
         <NuxtLink
-          to="/notice"
+          to="/market"
           class="px-4 py-1 w-20 text-center rounded-lg text-white font-bold bg-[#1B426B]"
         >
           목록

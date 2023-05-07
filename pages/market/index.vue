@@ -12,7 +12,7 @@ onMounted(() => {
 async function getRecentNotice () {
   const db = getFirestore()
   let idx = 1
-  const q = query(collection(db, 'market'))
+  const q = query(collection(db, 'market-items'))
   onSnapshot(q, (snapshot) => {
     recentNotice.value = []
     snapshot.forEach((doc) => {
@@ -32,7 +32,8 @@ const pageSize = ref(10)
 const searchKeyword = ref('')
 const filteredNotices = computed(() => {
   return recentNotice.value.filter(notice =>
-    notice.title.toLowerCase().includes(searchKeyword.value.toLowerCase())
+    (notice.title.toLowerCase().includes(searchKeyword.value.toLowerCase()) &&
+    (activeCategory.value === '전체' || notice.category === activeCategory.value))
   )
 })
 
@@ -65,8 +66,13 @@ const prevButtonDisabled = computed(() => {
 })
 
 const nextButtonDisabled = computed(() => {
-  return currentPage.value === Math.ceil(filteredNotices.value.length / pageSize.value)
+  return currentPage.value === Math.ceil(filteredNotices.value.length / pageSize.value) || filteredNotices.value.length === 0
 })
+
+const activeCategory = ref('전체')
+const setActiveCategory = (category) => {
+  activeCategory.value = category
+}
 </script>
 
 <template>
@@ -105,41 +111,107 @@ const nextButtonDisabled = computed(() => {
       <div>
         <div class="flex w-full h-32">
           <div class="w-1/6 h-full flex justify-center items-center font-bold text-lg">
-            전체
+            <button
+              class="hover:rounded-lg hover:bg-gray-200 px-2"
+              :class="{ 'bg-gray-200 rounded-lg': activeCategory === '전체' }"
+              @click="setActiveCategory('전체')"
+            >
+              전체
+            </button>
           </div>
           <div class="flex flex-col justify-center w-5/6 gap-6">
-            <div class="flex gap-4 font-bold">
+            <div class="flex font-bold">
               <div class="w-1/5">
-                냉동/냉장 저장고
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '냉동/냉장 저장고' }"
+                  @click="setActiveCategory('냉동/냉장 저장고')"
+                >
+                  냉동/냉장 저장고
+                </button>
               </div>
               <div class="w-1/5">
-                농축산물 저장고
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '농축산물 저장고' }"
+                  @click="setActiveCategory('농축산물 저장고')"
+                >
+                  농축산물 저장고
+                </button>
               </div>
               <div class="w-1/5">
-                물류보관 저온창고
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '물류보관 저온창고' }"
+                  @click="setActiveCategory('물류보관 저온창고')"
+                >
+                  물류보관 저온창고
+                </button>
               </div>
               <div class="w-1/5">
-                아이스크림 저장고
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '아이스크림 저장고' }"
+                  @click="setActiveCategory('아이스크림 저장고')"
+                >
+                  아이스크림 저장고
+                </button>
               </div>
               <div class="w-1/5">
-                방열문/에어커텐
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '방열문/에어커텐' }"
+                  @click="setActiveCategory('방열문/에어커텐')"
+                >
+                  방열문/에어커텐
+                </button>
               </div>
             </div>
-            <div class="flex gap-4 font-bold">
+            <div class="flex font-bold">
               <div class="w-1/5">
-                냉동기 유니트
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '냉동기 유니트' }"
+                  @click="setActiveCategory('냉동기 유니트')"
+                >
+                  냉동기 유니트
+                </button>
               </div>
               <div class="w-1/5">
-                냉난방/항온항습기/제습기
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '냉난방/항온항습기/제습기' }"
+                  @click="setActiveCategory('냉난방/항온항습기/제습기')"
+                >
+                  냉난방/항온항습기/제습기
+                </button>
               </div>
               <div class="w-1/5">
-                정육/마트 쇼케이스
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '정육/마트 쇼케이스' }"
+                  @click="setActiveCategory('정육/마트 쇼케이스')"
+                >
+                  정육/마트 쇼케이스
+                </button>
               </div>
               <div class="w-1/5">
-                부속품 수입 도/소매
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '부속품 수입 도/소매' }"
+                  @click="setActiveCategory('부속품 수입 도/소매')"
+                >
+                  부속품 수입 도/소매
+                </button>
               </div>
               <div class="w-1/5">
-                콘베어 방음설비
+                <button
+                  class="hover:rounded-lg hover:bg-gray-200 px-2"
+                  :class="{ 'bg-gray-200 rounded-lg': activeCategory === '콘베어 방음설비' }"
+                  @click="setActiveCategory('콘베어 방음설비')"
+                >
+                  콘베어 방음설비
+                </button>
               </div>
             </div>
           </div>
@@ -177,8 +249,13 @@ const nextButtonDisabled = computed(() => {
         >
           <NuxtLink
             :to="`/market/${notice.id}`"
-            class="h-72 bg-gray-100"
-          />
+          >
+            <img
+              :src="`${notice.imageUrl}`"
+              alt="이미지"
+              class="object-cover h-72"
+            >
+          </NuxtLink>
           <div class="text-center mt-2">
             {{ notice.title }}
           </div>
