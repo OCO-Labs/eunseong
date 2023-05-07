@@ -40,7 +40,7 @@ export default {
   </header>
   <main>
     <div class="w-1/2 mx-auto mb-20">
-      <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full mb-20">
+      <h1 class="text-4xl text-[#494949] font-bold inline-block border-b-4 border-gray-300 w-full ">
         제품소개
       </h1>
     </div>
