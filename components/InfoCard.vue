@@ -40,9 +40,11 @@ function formatDate (timestamp) {
     <div class="flex">
       <div class="w-1/3 h-64 bg-white border p-4">
         <div class="flex flex-col mt-1">
-          <div class="font-bold text-lg text-[#1B426B]">
-            공/지/사/항
-          </div>
+          <NuxtLink to="/notice">
+            <div class="font-bold text-lg text-[#1B426B]">
+              공/지/사/항
+            </div>
+          </NuxtLink>
           <div class="bg-[#1B426B] w-full h-[0.1rem] mb-1" />
         </div>
         <div
