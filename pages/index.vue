@@ -23,125 +23,140 @@ export default {
     <div class="flex justify-center">
       <div class="grid grid-cols-3 gap-10 w-[62rem] justify-items-center">
         <div class="w-80 h-[25.9rem] border-2 rounded-3xl group">
-          <img
-            class="w-full border-b rounded-t-3xl"
-            loading="lazy"
-            src="~/assets/index/Rectangle17.png"
-            alt="사진"
-          >
-          <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
-            <h2 class="text-xl group-hover:text-white">
-              냉동/냉장 저장고
-            </h2>
-            <p class="text-sm text-gray-400 group-hover:text-white">
-              REFRIGERATED STORAGE
-            </p>
-            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
-              상세보기
-            </p>
-          </div>
+          <NuxtLink to="/refrigerator">
+            <img
+              class="w-full border-b rounded-t-3xl"
+              loading="lazy"
+              src="~/assets/index/Rectangle17.png"
+              alt="사진"
+            >
+
+            <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+              <h2 class="text-xl group-hover:text-white">
+                냉동/냉장 저장고
+              </h2>
+              <p class="text-sm text-gray-400 group-hover:text-white">
+                REFRIGERATED STORAGE
+              </p>
+              <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
+                상세보기
+              </p>
+            </div>
+          </NuxtLink>
         </div>
         <div class="w-80 h-[25.9rem] border-2 rounded-3xl group">
-          <img
-            class="w-full border-b rounded-t-3xl"
-            loading="lazy"
-            src="~/assets/index/Rectangle19.png"
-            alt="사진"
-          >
-          <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
-            <h2 class="text-xl group-hover:text-white">
-              농축산물 저장고
-            </h2>
-            <p class="text-sm text-gray-400 group-hover:text-white">
-              AGRICULTURAL STORAGE
-            </p>
-            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
-              상세보기
-            </p>
-          </div>
+          <NuxtLink to="/farmstore">
+            <img
+              class="w-full border-b rounded-t-3xl"
+              loading="lazy"
+              src="~/assets/index/Rectangle19.png"
+              alt="사진"
+            >
+            <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+              <h2 class="text-xl group-hover:text-white">
+                농축산물 저장고
+              </h2>
+              <p class="text-sm text-gray-400 group-hover:text-white">
+                AGRICULTURAL STORAGE
+              </p>
+              <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
+                상세보기
+              </p>
+            </div>
+          </NuxtLink>
         </div>
         <div class="w-80 h-[25.9rem] border-2 rounded-3xl group">
-          <img
-            class="w-full border-b rounded-t-3xl"
-            loading="lazy"
-            src="~/assets/index/Rectangle21.png"
-            alt="사진"
-          >
-          <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
-            <h2 class="text-xl group-hover:text-white">
-              물류보관 저장창고
-            </h2>
-            <p class="text-sm text-gray-400 group-hover:text-white">
-              WAREHOUSE STORAGE
-            </p>
-            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
-              상세보기
-            </p>
-          </div>
+          <NuxtLink to="/storage">
+            <img
+              class="w-full border-b rounded-t-3xl"
+              loading="lazy"
+              src="~/assets/index/Rectangle21.png"
+              alt="사진"
+            >
+            <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+              <h2 class="text-xl group-hover:text-white">
+                물류보관 저장창고
+              </h2>
+              <p class="text-sm text-gray-400 group-hover:text-white">
+                WAREHOUSE STORAGE
+              </p>
+              <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
+                상세보기
+              </p>
+            </div>
+          </NuxtLink>
         </div>
         <div class="w-80 h-[25.9rem] border-2 rounded-3xl group">
-          <img
-            class="w-full border-b rounded-t-3xl"
-            loading="lazy"
-            src="~/assets/index/Rectangle1.png"
-            alt="사진"
-          >
-          <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
-            <h2 class="text-xl group-hover:text-white">
-              아이스크림 저장고
-            </h2>
-            <p class="text-sm text-gray-400 group-hover:text-white">
-              ICECREAM STORAGE
-            </p>
-            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
-              상세보기
-            </p>
-          </div>
+          <NuxtLink to="/icecream">
+            <img
+              class="w-full border-b rounded-t-3xl"
+              loading="lazy"
+              src="~/assets/index/Rectangle1.png"
+              alt="사진"
+            >
+            <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+              <h2 class="text-xl group-hover:text-white">
+                아이스크림 저장고
+              </h2>
+              <p class="text-sm text-gray-400 group-hover:text-white">
+                ICECREAM STORAGE
+              </p>
+              <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
+                상세보기
+              </p>
+            </div>
+          </NuxtLink>
         </div>
         <div class="w-80 h-[25.9rem] border-2 rounded-3xl group">
-          <img
-            class="w-full border-b rounded-t-3xl"
-            loading="lazy"
-            src="~/assets/index/Rectangle8.png"
-            alt="사진"
-          >
-          <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
-            <h2 class="text-xl group-hover:text-white">
-              방열문/에어커텐
-            </h2>
-            <p class="text-sm text-gray-400 group-hover:text-white">
-              DOOR/CURTAIN
-            </p>
-            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
-              상세보기
-            </p>
-          </div>
+          <NuxtLink to="/radiation">
+            <img
+              class="w-full border-b rounded-t-3xl"
+              loading="lazy"
+              src="~/assets/index/Rectangle8.png"
+              alt="사진"
+            >
+            <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+              <h2 class="text-xl group-hover:text-white">
+                방열문/에어커텐
+              </h2>
+              <p class="text-sm text-gray-400 group-hover:text-white">
+                DOOR/CURTAIN
+              </p>
+              <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
+                상세보기
+              </p>
+            </div>
+          </NuxtLink>
         </div>
         <div class="w-80 h-[25.9rem] border-2 rounded-3xl group">
-          <img
-            class="w-full border-b rounded-t-3xl"
-            loading="lazy"
-            src="~/assets/index/Rectangle10.png"
-            alt="사진"
-          >
-          <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
-            <h2 class="text-xl group-hover:text-white">
-              냉동기 유니트
-            </h2>
-            <p class="text-sm text-gray-400 group-hover:text-white">
-              REFRIGERATED UNIT
-            </p>
-            <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
-              상세보기
-            </p>
-          </div>
+          <NuxtLink to="/freezer">
+            <img
+              class="w-full border-b rounded-t-3xl"
+              loading="lazy"
+              src="~/assets/index/Rectangle10.png"
+              alt="사진"
+            >
+            <div class="flex flex-col p-5 font-bold rounded-b-3xl group-hover:bg-[#1B426B]">
+              <h2 class="text-xl group-hover:text-white">
+                냉동기 유니트
+              </h2>
+              <p class="text-sm text-gray-400 group-hover:text-white">
+                REFRIGERATED UNIT
+              </p>
+              <p class="mt-3 text-lg text-[#1B426B] group-hover:text-white">
+                상세보기
+              </p>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
     <div class="flex justify-center mt-12 mb-32">
-      <div class="bg-[#1B426B] p-2 px-10 font-bold text-white">
-        제품 소개 더 보러가기
-      </div>
+      <NuxtLink to="/product">
+        <div class="bg-[#1B426B] p-2 px-10 font-bold text-white">
+          제품 소개 더 보러가기
+        </div>
+      </NuxtLink>
     </div>
     <div class="flex flex-col items-center mb-7">
       <h1 class="text-3xl font-bold text-[#1B426B]">
